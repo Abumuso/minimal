@@ -1,35 +1,41 @@
 <template>
   <div class="navbar-head">
-    <div class="nav">
-      <div class="logo">
-        <img :src="img" alt="" />
-        <p>minimal</p>
+    <div class="conteiner">
+      <div class="nav">
+        <div class="logo">
+          <img :src="img" alt="" />
+          <p>minimal</p>
+        </div>
+        <ul>
+          <li>process</li>
+          <li>project</li>
+          <li>team</li>
+          <li>contact</li>
+        </ul>
       </div>
-      <ul>
-        <li>process</li>
-        <li>project</li>
-        <li>team</li>
-        <li>contact</li>
-      </ul>
     </div>
   </div>
   <div class="navbar-body">
-    <div class="bodytext">
-      <p>Making brands stand out</p>
-      <p>is our obsession</p>
-      <p class="line"></p>
-      <p>Let us help your brand stand out.</p>
+    <div class="conteiner">
+      <div class="bodytext">
+        <p>Making brands stand out</p>
+        <p>is our obsession</p>
+        <p class="line"></p>
+        <p>Let us help your brand stand out.</p>
+      </div>
     </div>
   </div>
   <div class="navbar-foot">
-    <div class="foottext">
-      <p>
-        Minimalist is a full-service digital creative agency located in Ontorio
-        Canada. We focus on design, consulting, technology, and photography.
-        We’ve been building unique digital products, platforms, and experiences
-        for the past 6 years. Let us help your company grow.
-      </p>
-      <p>Get in Touch</p>
+    <div class="conteiner">
+      <div class="foottext">
+        <p>
+          Minimalist is a full-service digital creative agency located in Ontorio
+          Canada. We focus on design, consulting, technology, and photography.
+          We’ve been building unique digital products, platforms, and experiences
+          for the past 6 years. Let us help your company grow.
+        </p>
+        <p>Get in Touch</p>
+      </div>
     </div>
   </div>
 </template>
@@ -79,14 +85,16 @@ ul {
 
 .navbar-body {
   display: flex;
-  width: 1440px;
-  height: 391px;
+  width: 100%;
+  // height: 391px;
   background-image: url("../assets/navimg2.jpg");
+  justify-content: center;
+  align-items: center;
 }
 .bodytext {
   margin: 98px auto;
-  width: 940px;
-  height: 195px;
+  width: 100%;
+  // height: 195px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -127,19 +135,21 @@ ul {
 }
 
 .navbar-foot {
-  width: 1440px;
-  height: 289px;
+  width: 100%;
+  // height: 289px;
   display: flex;
+  justify-content: center;
   background: #fefec9;
 }
 .foottext {
-  margin: 60px 250px 61px 250px;
-  width: 940px;
-  height: 168px;
+  margin: 60px auto;
+  width: 100%;
+  // height: 168px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: center;
+  gap: 40px;
 }
 .foottext p:nth-child(1) {
   color: #47474f;
@@ -158,5 +168,16 @@ ul {
     font-weight: 400;
     line-height: 20px;
     border: 1px solid;
+}
+.conteiner{
+  .nav{
+    width: 100%;
+  }
+  .bodytext{
+    width: 100%;
+  }
+  .foottext{
+    width: 100%;
+  }
 }
 </style>
