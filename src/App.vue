@@ -38,9 +38,11 @@ import section3 from "./components/Section3.vue";
     width: 740px;
   }
 }
-@media (max-width: 769) {
+@media (max-width: 769px) {
   .conteiner {
     width: 440px;
   }
+}
+@media (max-width: 447px) {
 }
 </style>

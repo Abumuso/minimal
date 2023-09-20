@@ -46,14 +46,14 @@ import img from "../assets/navlogo.jpg";
 
 <style lang="scss" scoped>
 .navbar-head {
-  width: 1440px;
+  width: 100%;
   height: 106px;
   display: flex;
   justify-content: center;
 }
 .nav {
   margin: 18px auto;
-  width: 940px;
+  width: 100%;
   height: 70px;
   display: flex;
   justify-content: space-between;
@@ -66,7 +66,6 @@ import img from "../assets/navlogo.jpg";
 }
 .logo p {
   margin: 13px 0 19px 0;
-  width: 72px;
   color: #333;
   font-size: 22px;
   font-style: normal;
@@ -86,7 +85,6 @@ ul {
 .navbar-body {
   display: flex;
   width: 100%;
-  // height: 391px;
   background-image: url("../assets/navimg2.jpg");
   justify-content: center;
   align-items: center;

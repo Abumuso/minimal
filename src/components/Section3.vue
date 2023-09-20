@@ -61,7 +61,7 @@
   justify-content: center;
 }
 .bigbox3 {
-  width: 940px;
+  width: 100%;
   margin-top: 68.95px;
   display: flex;
   flex-direction: column;
