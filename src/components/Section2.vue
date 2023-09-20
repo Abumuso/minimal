@@ -1,6 +1,6 @@
 <template>
   <div class="section">
-    <div class="conteiner">
+    <div class="container">
       <div class="bigbox">
         <p>Recent projects</p>
         <p class="line"></p>
@@ -84,14 +84,14 @@
   background: #f5f5f5;
 }
 .bigbox {
-  margin-top: 69px;
+  padding:  69px 0;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .bigbox p {
-  margin-top: 10px;
+  // margin-top: 10px;
   width: 230px;
   color: #333;
   text-align: center;
@@ -120,7 +120,7 @@
 }
 .box {
   width: 290px;
-  height: 384px;
+  // height: 384px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -130,6 +130,7 @@ img {
 }
 .text {
   width: 100%;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,7 +138,7 @@ img {
   background: #fff;
 }
 .text p:nth-child(1) {
-  margin-top: 19px;
+  margin-top: 10px;
   color: #333;
   text-align: center;
   font-size: 16px;
@@ -147,23 +148,23 @@ img {
   text-transform: uppercase;
 }
 .text p:nth-child(2) {
-  margin-top: 4px;
-  margin-bottom: 21px;
+  // margin-top: 4px;
+  // margin-bottom: 21px;
   color: #333;
   text-align: center;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 0px;
   text-transform: none;
 }
 
-.conteiner {
-  .bigbox1 {
-    width: 100%;
-  }
-  .boxhead {
-    width: 100%;
-  }
-}
+// .conteiner {
+//   .bigbox1 {
+//     width: 100%;
+//   }
+//   .boxhead {
+//     width: 100%;
+//   }
+// }
 </style>

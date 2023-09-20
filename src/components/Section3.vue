@@ -1,11 +1,11 @@
 <template>
   <div class="section">
-    <div class="conteiner">
+    <div class="container">
       <div class="bigbox3">
         <p>our team</p>
         <p class="line"></p>
         <div class="box">
-          <div class="card">
+          <div class="card1">
             <img src="../assets/pic1.jpg" alt="" />
             <p class="name">Ron Swanson</p>
             <p class="prof">Founder</p>
@@ -15,7 +15,7 @@
               <span><img src="../assets/email.svg" alt="" /></span>
             </div>
           </div>
-          <div class="card">
+          <div class="card1">
             <img src="../assets/pic2.jpg" alt="" />
             <p class="name">Ron Swanson</p>
             <p class="prof">Founder</p>
@@ -25,7 +25,7 @@
               <span><img src="../assets/email.svg" alt="" /></span>
             </div>
           </div>
-          <div class="card">
+          <div class="card1">
             <img src="../assets/pic3.jpg" alt="" />
             <p class="name">Ron Swanson</p>
             <p class="prof">Founder</p>
@@ -37,7 +37,7 @@
               <span><img src="../assets/email.svg" alt="" /></span>
             </div>
           </div>
-          <div class="card">
+          <div class="card1">
             <img src="../assets/pic4.jpg" alt="" />
             <p class="name">Ron Swanson</p>
             <p class="prof">Founder</p>
@@ -62,7 +62,8 @@
 }
 .bigbox3 {
   width: 100%;
-  margin-top: 68.95px;
+  // margin-top: 68.95px;
+  padding: 69px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,19 +91,20 @@
   align-items: flex-start;
   flex-wrap: wrap;
 }
-.card {
+.card1 {
+  margin-top: 0px;
   margin-bottom: 20px;
   width: 230px;
   height: 339px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
 }
-.card img {
+.card1 img {
   width: 220px;
   height: 220px;
 }
-.card .name {
+.card1 .name {
   margin-top: 20px;
   color: #333;
   text-align: center;
@@ -112,20 +114,20 @@
   line-height: 20px;
   text-transform: uppercase;
 }
-.card .prof {
+.card1 .prof {
   margin-top: 6px;
   color: #333;
   text-align: center;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 0px;
 }
 .icons {
   display: flex;
   width: 220px;
   height: 35px;
-  padding: 11.047px 60px 9.953px 61px;
+  // padding: 11.047px 60px 9.953px 61px;
   justify-content: center;
   align-items: flex-start;
   gap: 14px;
@@ -134,12 +136,12 @@
   width: 14px;
   height: 14px;
 }
-.conteiner {
-  .bigbox3 {
-    width: 100%;
-  }
-  .box {
-    width: 100%;
-  }
-}
+// .conteiner {
+//   .bigbox3 {
+//     width: 100%;
+//   }
+//   .box {
+//     width: 100%;
+//   }
+// }
 </style>

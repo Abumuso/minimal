@@ -1,6 +1,6 @@
 <template>
     <div class="section1">
-      <div class="conteiner">
+      <div class="container">
         <div class="bigbox">
           <p>How we make brands thrive</p>
           <p class="line"></p>

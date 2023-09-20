@@ -1,6 +1,6 @@
 <template>
   <div class="navbar-head">
-    <div class="conteiner">
+    <div class="container">
       <div class="nav">
         <div class="logo">
           <img :src="img" alt="" />
@@ -12,27 +12,28 @@
           <li>team</li>
           <li>contact</li>
         </ul>
+        <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
       </div>
     </div>
   </div>
+
   <div class="navbar-body">
-    <div class="conteiner">
+    <div class="container">
       <div class="bodytext">
-        <p>Making brands stand out</p>
-        <p>is our obsession</p>
+        <p>Making brands stand outis our obsession</p>
         <p class="line"></p>
         <p>Let us help your brand stand out.</p>
       </div>
     </div>
   </div>
   <div class="navbar-foot">
-    <div class="conteiner">
+    <div class="container">
       <div class="foottext">
         <p>
-          Minimalist is a full-service digital creative agency located in Ontorio
-          Canada. We focus on design, consulting, technology, and photography.
-          We’ve been building unique digital products, platforms, and experiences
-          for the past 6 years. Let us help your company grow.
+          Minimalist is a full-service digital creative agency located in
+          Ontorio Canada. We focus on design, consulting, technology, and
+          photography. We’ve been building unique digital products, platforms,
+          and experiences for the past 6 years. Let us help your company grow.
         </p>
         <p>Get in Touch</p>
       </div>
@@ -57,12 +58,16 @@ import img from "../assets/navlogo.jpg";
   height: 70px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .logo {
   width: 155px;
   height: 70px;
   display: flex;
   gap: 18px;
+}
+.menu-icon {
+  display: none;
 }
 .logo p {
   margin: 13px 0 19px 0;
@@ -76,7 +81,7 @@ import img from "../assets/navlogo.jpg";
 ul {
   display: flex;
   height: 45px;
-  padding: 23px 0px 0px 34px;
+  padding: 23px 0px 0px;
   justify-content: flex-end;
   align-items: flex-start;
   gap: 34px;
@@ -88,6 +93,10 @@ ul {
   background-image: url("../assets/navimg2.jpg");
   justify-content: center;
   align-items: center;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .bodytext {
   margin: 98px auto;
@@ -107,22 +116,24 @@ ul {
   line-height: 55px;
   text-transform: uppercase;
 }
+// .bodytext p:nth-child(2) {
+//   color: #fff;
+//   text-align: center;
+//   font-size: 43px;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: 55px;
+//   text-transform: uppercase;
+// }
 .bodytext p:nth-child(2) {
-  color: #fff;
-  text-align: center;
-  font-size: 43px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 55px;
-  text-transform: uppercase;
-}
-.bodytext p:nth-child(3) {
   width: 80px;
   height: 2px;
+  color: rgba(255, 255, 255, 0.81);
+
   background: #fff;
   margin-top: 28px;
 }
-.bodytext p:nth-child(4) {
+.bodytext p:nth-child(3) {
   margin-top: 25px;
   color: rgba(255, 255, 255, 0.81);
   text-align: center;
@@ -158,24 +169,35 @@ ul {
   line-height: 25px;
 }
 .foottext p:nth-child(2) {
-    padding: 13px 34px 20px 34px;
-    color: #47474f;
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    border: 1px solid;
+  padding: 13px 34px 20px 34px;
+  color: #47474f;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  border: 1px solid;
 }
-.conteiner{
-  .nav{
-    width: 100%;
-  }
-  .bodytext{
-    width: 100%;
-  }
-  .foottext{
-    width: 100%;
-  }
+@media (max-width: 990px) {
+
+
 }
+
+@media (max-width: 768px) {
+  ul {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+    font-size: 30px;
+  }
+.bodytext p:nth-child(1) {
+  font-size: 36px;
+
+}
+}
+@media (max-width: 547px) {
+
+}
+
 </style>
