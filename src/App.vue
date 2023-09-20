@@ -44,5 +44,8 @@ import section3 from "./components/Section3.vue";
   }
 }
 @media (max-width: 447px) {
+  .conteiner {
+    width: 100%;
+  }
 }
 </style>
